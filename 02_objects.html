@@ -8,12 +8,13 @@
   <body>
     <h1 id="d"></h1>
     <script>
-      const car = {
-        type: "Fiat",
-        model: "500",
-        color: "white",
-      };
-      document.getElementById("d").innerHTML = car.color;
+      const person = new Object();
+      person.name = "Sabir";
+      person.age = 21;
+      person.habit = "coding";
+
+      const x = person;
+      document.getElementById("d").innerHTML = x.habit;
     </script>
   </body>
 </html>
