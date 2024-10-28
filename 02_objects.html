@@ -7,14 +7,19 @@
   </head>
   <body>
     <h1 id="d"></h1>
+    <h1 id="b"></h1>
     <script>
       const person = new Object();
       person.name = "Sabir";
       person.age = 21;
       person.habit = "coding";
 
-      const x = person.name;
+      const x = person["age"];
       document.getElementById("d").innerHTML = x;
+
+      person.last = "kazi";
+      delete person.last;
+      document.getElementById("b").innerHTML = person.last;
     </script>
   </body>
 </html>
