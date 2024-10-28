@@ -1,0 +1,19 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 0,
+  "editor.fontSize": 22,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "off",
+  "zenMode.hideLineNumbers": false,
+  "workbench.editor.tabActionCloseVisibility": true,
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.guides.indentation": false,
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "php.validate.executablePath": "C:/xampp/php/php.exe",
+  "editor.formatOnType": true,
+  "cSpell.words": ["tailwindcss"]
+}
