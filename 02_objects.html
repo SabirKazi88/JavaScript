@@ -9,15 +9,17 @@
     <h1 id="d"></h1>
     <h1 id="b"></h1>
     <script>
-      const object = {
+      const ob = {
         firstName: "sabir",
         lastName: "kazi",
         age: 21,
         name: function () {
-          return this.firstName + " " + this.lastName;
-        }
+          return (this.firstName + " " + this.lastName).toUpperCase();
+        },
       };
-
+      let person = ob;
+      document.getElementById("d").innerHTML = person.name();
+      let fullName = ob.name();
     </script>
   </body>
 </html>
