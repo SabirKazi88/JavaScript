@@ -20,6 +20,14 @@
       let person = ob;
       document.getElementById("d").innerHTML = person.name();
       let fullName = ob.name();
+
+      const per = {
+        name: "John",
+        age: 30,
+        city: "New York",
+      };
+      const myArray = Object.values(per);
+      document.getElementById("b").innerHTML = myArray;
     </script>
   </body>
 </html>
