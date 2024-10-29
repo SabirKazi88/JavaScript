@@ -16,9 +16,15 @@
         this.age = age;
       }
 
-      const sabir = new person();
+      const sab = new person("sabir", "kazi", 21);
+      document.getElementById("a").innerHTML = sab.firstName;
+
+      person.nation = "india";
+      document.getElementById("b").innerHTML = sab.nation;
+
+      const raees = new person("raees", "jamadar", 22);
       person.prototype.nation = "india";
-      document.getElementById("a").innerHTML = sabir.nation;
+      document.getElementById("c").innerHTML = raees.nation;
     </script>
   </body>
 </html>
