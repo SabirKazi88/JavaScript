@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+    </style>
   </head>
   <body>
     <h1 id="a"></h1>
     <script>
-      let str = "Hello, World";
-
-      let r = str;
+      let firstName = "John";
+      let lastName = "Doe";
+      let r = `Welcome ${firstName}, ${lastName}`;
       document.getElementById("a").innerHTML = r;
     </script>
   </body>
