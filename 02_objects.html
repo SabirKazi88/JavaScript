@@ -9,23 +9,15 @@
     <h1 id="d"></h1>
     <h1 id="b"></h1>
     <script>
-      const person = new Object();
-      person.name = "Sabir";
-      person.age = 21;
-      person.habit = "coding";
-
-      const x = person["age"];
-      document.getElementById("d").innerHTML = x;
-
-      person.last = "kazi";
-      delete person.last;
-
-      person.last = {
-        last1: "kazi",
-        last2: "2kazi",
-        last3: "3kazi",
+      const object = {
+        firstName: "sabir",
+        lastName: "kazi",
+        age: 21,
+        name: function () {
+          return this.firstName + " " + this.lastName;
+        }
       };
-      document.getElementById("b").innerHTML = person.last.last3;
+
     </script>
   </body>
 </html>
