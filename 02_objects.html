@@ -9,25 +9,15 @@
     <h1 id="d"></h1>
     <h1 id="b"></h1>
     <script>
-      const ob = {
-        firstName: "sabir",
-        lastName: "kazi",
-        age: 21,
-        name: function () {
-          return (this.firstName + " " + this.lastName).toUpperCase();
-        },
-      };
-      let person = ob;
-      document.getElementById("d").innerHTML = person.name();
-      let fullName = ob.name();
-
-      const per = {
+      // Create an Object
+      const person = {
         name: "John",
         age: 30,
         city: "New York",
       };
-      const myArray = Object.values(per);
-      document.getElementById("b").innerHTML = myArray;
+
+      // Display JSON
+      document.getElementById("d").innerHTML = JSON.stringify(person);
     </script>
   </body>
 </html>
