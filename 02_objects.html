@@ -9,15 +9,19 @@
     <h1 id="d"></h1>
     <h1 id="b"></h1>
     <script>
-      // Create an Object
-      const person = {
-        name: "John",
-        age: 30,
-        city: "New York",
-      };
+      function person(first, last, age) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.nemo = "raees";
+        this.fullName = function () {
+          return this.firstName + " " + this.lastName;
+        };
+      }
 
-      // Display JSON
-      document.getElementById("d").innerHTML = JSON.stringify(person);
+      const sabir = new person("sabir", "kazi", 21, "sabo");
+      document.getElementById("d").innerHTML = JSON.stringify(sabir.fullName());
+      document.getElementById("d").innerHTML = JSON.stringify(sabir.nemo);
     </script>
   </body>
 </html>
