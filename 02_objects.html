@@ -16,18 +16,9 @@
         this.age = age;
       }
 
-      const father = new person("sabir", "kazi", 21);
-      const mother = new person("sabirwife", "wifelast", 21);
-      document.getElementById("a").innerHTML = mother.lastName;
-      mother.changeLast = function (last) {
-        this.lastName = last;
-      };
-
-      mother.changeLast("husband last");
-      document.getElementById("b").innerHTML = mother.lastName;
-
-      person.prototype.nationality = "india";
-      document.getElementById("c").innerHTML = mother.nationality;
+      const sabir = new person();
+      person.prototype.nation = "india";
+      document.getElementById("a").innerHTML = sabir.nation;
     </script>
   </body>
 </html>
