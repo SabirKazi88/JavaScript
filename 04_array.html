@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    const 
-</body>
+    <style>
+      body {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="a"></h1>
+    <script>
+      var r = "";
+      const arr = ["apple", "banana", "orange"];
+      for (let i = 0; i < arr.length; i++) {
+        r += arr[i] + " ";
+      }
+      document.getElementById("a").innerHTML = r;
+    </script>
+  </body>
 </html>
